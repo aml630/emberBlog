@@ -8,5 +8,7 @@
 <!-- {{comment-tile comment=model}} -->
 {{#each model.comments as |comment|}}
 <textarea>{{comment.text}}</textarea>
+<button {{ action 'delete' comment}}>Delete Comment</button>
+{{update-comment comment=comment update="update"}}
 <br />
 {{/each}}

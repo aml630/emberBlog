@@ -13,6 +13,18 @@ export default Ember.Route.extend({
       return entry.save();
     });
     // this.transitionTo('/entry/:entry_id');
-   }
+  },
+
+   delete(comment) {
+     comment.destroyRecord();
+   },
+   update(comment, params) {
+     Object.keys(params).forEach(function(key) {
+       if(params[key] !== undefined) {
+         comment.set(key, params[key]);
+       }
+     });
+     comment.save();
+    }
   }
 });
