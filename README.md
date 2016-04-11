@@ -1,7 +1,6 @@
 # Food-blog
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This application was designed to allow users to post blog entries with titles, images, and the main content.  These posts can be commented on by other users.  It utilizes firebase to allow the application to caputure and save data.
 
 ## Prerequisites
 
